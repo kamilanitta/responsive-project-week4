@@ -1,0 +1,41 @@
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 48px;
+  margin-bottom: 62px;
+}
+
+.logo {
+  width: 150px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-list a {
+  text-decoration: none;
+  color: black;
+}
+
+.title-container {
+  height: 265px;
+  width: 100%;
+  background-image: url("./assets/title_img.png");
+}
+
+h1 {
+  size: 72px;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+}
+
+p {
+  size: 24px;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+}
