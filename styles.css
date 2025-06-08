@@ -23,7 +23,14 @@
 .title-container {
   height: 265px;
   width: 100%;
-  background-image: url("./assets/title_img.png");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+    url("./assets/title_img.png");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h1 {
@@ -33,9 +40,54 @@ h1 {
   font-weight: 700;
 }
 
-p {
+h2 {
   size: 24px;
   color: white;
   text-align: center;
   font-weight: 700;
+}
+
+.body-container {
+  width: 1160px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin: 100px auto;
+}
+
+.img-container {
+  width: 560px;
+  height: 408px;
+  overflow: hidden;
+}
+
+.thumbnail {
+  border-radius: 12px;
+  width: 100%;
+  height: 90%;
+  object-fit: cover; /* mantém proporção e corta o excesso */
+  object-position: center; /* opcional: define o foco do corte */
+}
+h3 {
+  margin-top: 8px;
+}
+
+.footer {
+  background-color: #f9f7fe;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.brand-logos {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-copyrights {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
 }
