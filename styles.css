@@ -1,3 +1,9 @@
+.container {
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .nav-container {
   display: flex;
   align-items: center;
@@ -32,14 +38,17 @@
   justify-content: center;
 }
 
+.title {
+  color: white;
+}
+
 h1 {
   size: 72px;
-  color: white;
   text-align: center;
   font-weight: 700;
 }
 
-h2 {
+.subtitle {
   size: 24px;
   color: white;
   text-align: center;
@@ -47,7 +56,6 @@ h2 {
 }
 
 .body-container {
-  width: 1160px;
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
@@ -56,7 +64,8 @@ h2 {
 }
 
 .img-container {
-  width: 560px;
+  border-radius: 12px;
+  width: 515px;
   height: 408px;
   overflow: hidden;
 }
@@ -75,6 +84,7 @@ h3 {
 
 .footer {
   background-color: #f9f7fe;
+  width: 100%;
   height: 100px;
   display: flex;
   justify-content: space-around;
@@ -116,7 +126,7 @@ h3 {
   }
 
   .img-container {
-    width: 430px;
+    width: 350px;
     height: 285px;
   }
   h1 {
@@ -127,5 +137,102 @@ h3 {
   }
   h3 {
     font-size: 18px;
+  }
+}
+
+/* About CSS */
+.self-container {
+  width: 960px;
+  height: 405px;
+  display: flex;
+  gap: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.self-picture {
+  width: 460px;
+  border-radius: 12px;
+}
+
+.author-name {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.favorites-title {
+  font-size: 36px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.follow-me {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.recipes-main-container {
+  display: flex;
+  margin: 40px auto;
+  gap: 40px;
+  height: 550px;
+}
+
+.recipes-container {
+  width: 350px;
+  height: 350px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.fav-image {
+  width: 350px;
+  height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fav-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 350px;
+  }
+
+  .recipes-main-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .recipes-container {
+    height: auto;
+  }
+
+  .fav-image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .self-container {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .self-picture {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .author-name {
+    font-size: 36px;
   }
 }
